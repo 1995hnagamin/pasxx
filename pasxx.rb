@@ -95,6 +95,44 @@ ROLL
 EOS
 end
 
+def mov
+  puts <<"EOS"
+SWAP
+DUP
+PUSH 3
+ADD
+EOS
+  roll_imm(4, 3)
+  puts <<"EOS"
+SWAP
+PUSH 1
+ROLL
+DUP
+PUSH 4
+ADD
+DUP
+PUSH 1
+SUB
+DUP
+PUSH 1
+SUB
+PUSH 1
+PUSH 4
+PUSH 2
+ROLL
+ROLL
+PUSH 1
+ADD
+PUSH 3
+PUSH 1
+ROLL
+ROLL
+PUSH 1
+SUB
+SWAP
+EOS
+end
+
 def size
   puts <<"EOS"
 SWAP

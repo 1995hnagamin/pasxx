@@ -46,6 +46,8 @@ EOS
       swap
     when "TOGGLE"
       toggle
+    when "MOV"
+      mov
     when "SIZE"
       size
     when "NEW"
